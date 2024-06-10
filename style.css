@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-
+  --Red: hsl(0, 100%, 67%);
+  --Red-bg: hsla(0, 100%, 67%, 0.1);
+  --Orange:  hsl(39, 100%, 56%);
+  --Orange-bg:  hsla(39, 100%, 56%, 0.1);
+  --Green: hsl(166, 100%, 37%);
+  --Green-bg: hsla(166, 100%, 37%, 0.1);
+  --Blue: hsl(234, 85%, 45%);
+  --Blue-bg: hsla(234, 85%, 45%, 0.1);
 }
 
 html,
@@ -29,7 +36,7 @@ body {
 p {
     font-size: 18px;
     font-weight: 500;
-    color: hsl(241, 100%, 89%);
+    margin: 16px;
 }
 
 main {
@@ -85,3 +92,71 @@ h3 {
 }
 
 /* SUMMARY SECTION */
+
+.summaryRows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.summaryRow {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.dark {
+  color: hsla(224, 30%, 27%, 0.4);
+}
+
+.category {
+  margin-right: auto;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 50px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  border: none;
+  padding: 15px;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+} 
+
+button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 800px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    flex-direction: column;
+
+  }
+
+  .result {
+    border-radius: 0 0 50px 50px;
+    flex-grow: 1;
+    padding: 2rem;
+  }
+
+  .details {
+    flex-grow: 2;
+  }
+
+  .scoreNumber {
+    padding: 2.5rem;
+  }
+}
