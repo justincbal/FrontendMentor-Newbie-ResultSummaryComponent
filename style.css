@@ -21,19 +21,67 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  /* border: solid 1px red; */
+  
+  padding: 0;
 }
 
 p {
     font-size: 18px;
     font-weight: 500;
+    color: hsl(241, 100%, 89%);
 }
 
 main {
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 2.3rem;
+    border-radius: 25px;
+    
 }
 
 section {
     flex: 1;
+    padding: 2.3rem;
+    
 }
+
+/* RESULT SIDE */
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  border-radius: 25px;
+}
+
+.scoreNumber {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+  padding: 3.2rem;
+} 
+
+.scoreNumber > * {
+  margin: 0;
+}
+
+.bold {
+  font-size: 4rem;
+  font-weight: 800;
+  color: white;
+}
+
+.lightText {
+  color: hsl(241, 100%, 89%);
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* SUMMARY SECTION */
